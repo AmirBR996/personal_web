@@ -1,0 +1,70 @@
+Personal Information
+Name: Amir Bhattarai
+Phone: +977 9818585524
+Email: amirbhattarai861@gmail.com
+LinkedIn: https://www.linkedin.com/in/amir-bhattarai-7577b4322
+GitHub: https://github.com/AmirBR996
+Website: https://www.bhattaraiamir.com.np
+
+Professional Summary
+Amir Bhattarai is a Computer Science student with hands-on experience in Artificial Intelligence, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and Deep Learning. He has built multilingual AI assistants, fine-tuned Small Language Models using QLoRA, and developed AI-powered applications using LangChain, FastAPI, FAISS, PyTorch, and Groq.
+
+Experience
+AI Studio — AI/ML Engineer (Remote)
+Duration: April 2026 – Present
+Responsibilities:
+Fine-tuned Small Language Models (SLMs) using QLoRA.
+Built Retrieval-Augmented Generation (RAG) pipelines.
+Integrated LangChain, FAISS, and LLM APIs.
+Developed context-aware AI assistants.
+
+Projects
+CivicAI – Multilingual Constitutional AI Assistant
+Description: AI assistant for answering questions about the Constitution of Nepal.
+Technologies: FastAPI, LangChain, FAISS, Phi-3, QLoRA, PEFT, PyTorch
+Features:
+Fine-tuned Phi-3 SLM.
+Multilingual RAG pipeline.
+English and Nepali support.
+
+NRB Multilingual RAG Assistant
+Description: AI chatbot for Nepal Rastra Bank documents.
+Technologies: LangChain, FAISS, Groq, Llama 3.3 70B
+Features:
+English, Nepali, and Romanized Nepali support.
+Document-grounded responses.
+
+AI Voice Call Agent
+Description: AI voice assistant for answering college-related phone queries.
+Technologies: Twilio, LangChain, FAISS, Groq, Nepali TTS
+
+Nepal Crop Disease Detection
+Description: Deep learning web application for detecting crop diseases.
+Technologies: PyTorch, DenseNet121, HTML, CSS, JavaScript
+
+Multilingual College Chatbot
+Description: College information chatbot.
+Technologies: Rasa, Python
+
+Recruiter AI
+Description: AI-powered resume screening system.
+Technologies: FastAPI, LangGraph, Groq, SQLite, Gmail API/IMAP
+Features:
+Fetches resumes from Gmail.
+Evaluates resumes using LLMs.
+Ranks candidates.
+Sends personalized acceptance and rejection emails automatically.
+
+Education
+Bachelor of Science in Computer Science and Information Technology (BSc CSIT)
+New Summit College, Kathmandu, Nepal
+Higher Secondary Education (+2 Science)
+Premier College, Kathmandu, Nepal
+
+Technical Skills
+Programming Languages: Python, C++, C#, JavaScript
+AI & Machine Learning: PyTorch, Machine Learning, Deep Learning
+Generative AI: LangChain, LangGraph, RAG, QLoRA, PEFT
+Frameworks: FastAPI, Node.js, Express.js, .NET
+Databases: MySQL, MongoDB, SQLite, FAISS
+Tools: Git, Linux, Docker

@@ -116,7 +116,7 @@ async function handleSendMessage() {
     let firstTokenReceived = false;
 
     try {
-        const response = await fetch("http://localhost:8000/api/chat/stream", {
+        const response = await fetch("/api/chat/stream", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ question: query, thread_id: threadId })
@@ -193,7 +193,7 @@ hireForm.addEventListener("submit", async (e) => {
     hireStatus.className = "hire-status";
 
     try {
-        const response = await fetch("http://localhost:8000/api/hire", {
+        const response = await fetch("/api/hire", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, message })

@@ -10,12 +10,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-from twilio.twiml.voice_response import Gather, VoiceResponse
 
-# Import voice agent response helper
-from call_agent import get_agent_response
 
-# Import portfolio streaming agent from main.py
 from main import agent_graph
 
 load_dotenv()
@@ -43,10 +39,6 @@ class HireRequest(BaseModel):
     email: str
     message: str
 
-
-# ----------------------------------------------------
-# Portfolio & Email Endpoints
-# ----------------------------------------------------
 @app.get("/")
 async def serve_index():
     return FileResponse("index.html")
@@ -101,67 +93,6 @@ async def chat_stream(request: ChatRequest):
         stream_agent_updates(request.question, request.thread_id),
         media_type="text/event-stream",
     )
-
-
-# ----------------------------------------------------
-# Twilio Voice Webhook Endpoints
-# ----------------------------------------------------
-@app.post("/voice")
-async def voice(request: Request):
-    """Initial webhook triggered when a call arrives."""
-    resp = VoiceResponse()
-    gather = Gather(
-        input="speech",
-        action="/handle-speech",
-        method="POST",
-        speech_timeout="auto",
-        language="en-US",
-    )
-    gather.say(
-        "Hi, you've reached Amir's assistant. What would you like to know?",
-        voice="Polly.Joanna",
-    )
-    resp.append(gather)
-
-    resp.redirect("/voice")
-    return Response(content=str(resp), media_type="application/xml")
-
-
-@app.post("/handle-speech")
-async def handle_speech(request: Request):
-    """Processes speech input from the caller using checkpointer-backed thread IDs."""
-    form = await request.form()
-    caller_question = form.get("SpeechResult", "")
-    call_sid = form.get("CallSid", "default_thread")
-
-    resp = VoiceResponse()
-
-    if not caller_question:
-        resp.say("Sorry, I didn't catch that.", voice="Polly.Joanna")
-        resp.redirect("/voice")
-        return Response(content=str(resp), media_type="application/xml")
-
-    reply_text = get_agent_response(caller_question, thread_id=call_sid)
-
-    gather = Gather(
-        input="speech",
-        action="/handle-speech",
-        method="POST",
-        speech_timeout="auto",
-        language="en-US",
-    )
-    gather.say(reply_text, voice="Polly.Joanna")
-    gather.say("Anything else you'd like to ask?", voice="Polly.Joanna")
-    resp.append(gather)
-
-    resp.say("Thanks for calling. Goodbye!", voice="Polly.Joanna")
-    resp.hangup()
-    return Response(content=str(resp), media_type="application/xml")
-
-
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
 
 
 if __name__ == "__main__":

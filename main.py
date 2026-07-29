@@ -8,6 +8,7 @@ from langgraph.checkpoint.memory import MemorySaver
 
 load_dotenv()
 
+
 loader = TextLoader("data.txt", encoding="utf-8")
 docs = loader.load()
 portfolio_text = "\n".join([doc.page_content for doc in docs])

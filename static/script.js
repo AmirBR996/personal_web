@@ -9,6 +9,7 @@ const newWordDelay = 2000;
 const typingTextSpan = document.querySelector(".typing-text");
 
 function type() {
+    if (!typingTextSpan) return;
     const currentWord = words[wordIdx];
     
     if (isDeleting) {
@@ -37,39 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
     if (words.length && typingTextSpan) setTimeout(type, 500);
 });
 
-// Premium Theme Toggle Management
-const themeToggleBtn = document.getElementById("theme-toggle");
-const themeIcon = themeToggleBtn.querySelector("i");
-
-// Initialize theme state from system/localStorage preferences
-const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const savedTheme = localStorage.getItem("portfolio-theme") || (systemPrefersDark ? "dark" : "light");
-document.documentElement.setAttribute("data-theme", savedTheme);
-themeIcon.className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
-
-themeToggleBtn.addEventListener("click", () => {
-    const currentTheme = document.documentElement.getAttribute("data-theme");
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-    
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("portfolio-theme", newTheme);
-    themeIcon.className = newTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
-});
-
 // Mobile Navigation Drawer Toggle Handler
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show-mobile-menu");
-});
-
-// Close mobile menu whenever clicking a nav item
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("show-mobile-menu");
+if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show-mobile-menu");
     });
-});
+
+    // Close mobile menu whenever clicking a nav item
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("show-mobile-menu");
+        });
+    });
+}
 
 // Interactive Floating AI Chat Assistant Interface
 const openChatBtn = document.getElementById("openChat");
@@ -81,19 +65,22 @@ const sendBtn = document.getElementById("sendBtn");
 
 let threadId = "session_" + Math.random().toString(36).substring(7);
 
-openChatBtn.addEventListener("click", () => {
-    chatWidget.classList.add("active");
-    openChatBtn.style.transform = "scale(0)";
-    setTimeout(() => openChatBtn.style.display = "none", 200);
-});
+if (openChatBtn && closeChatBtn && chatWidget) {
+    openChatBtn.addEventListener("click", () => {
+        chatWidget.classList.add("active");
+        openChatBtn.style.transform = "scale(0)";
+        setTimeout(() => openChatBtn.style.display = "none", 200);
+    });
 
-closeChatBtn.addEventListener("click", () => {
-    chatWidget.classList.remove("active");
-    openChatBtn.style.display = "flex";
-    setTimeout(() => openChatBtn.style.transform = "scale(1)", 50);
-});
+    closeChatBtn.addEventListener("click", () => {
+        chatWidget.classList.remove("active");
+        openChatBtn.style.display = "flex";
+        setTimeout(() => openChatBtn.style.transform = "scale(1)", 50);
+    });
+}
 
 async function handleSendMessage() {
+    if (!chatInput || !chatMessages) return;
     const query = chatInput.value.trim();
     if (!query) return;
 
@@ -175,41 +162,45 @@ async function handleSendMessage() {
     }
 }
 
-sendBtn.addEventListener("click", handleSendMessage);
-chatInput.addEventListener("keypress", (e) => { if (e.key === "Enter") handleSendMessage(); });
+if (sendBtn && chatInput) {
+    sendBtn.addEventListener("click", handleSendMessage);
+    chatInput.addEventListener("keypress", (e) => { if (e.key === "Enter") handleSendMessage(); });
+}
 
 // Lead Generation Form Handler (FastAPI Post Router Binding)
 const hireForm = document.getElementById("hireForm");
 const hireStatus = document.getElementById("hireStatus");
 
-hireForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const name = document.getElementById("hireName").value.trim();
-    const email = document.getElementById("hireEmail").value.trim();
-    const message = document.getElementById("hireMessage").value.trim();
-    if (!name || !email || !message) return;
+if (hireForm) {
+    hireForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const name = document.getElementById("hireName").value.trim();
+        const email = document.getElementById("hireEmail").value.trim();
+        const message = document.getElementById("hireMessage").value.trim();
+        if (!name || !email || !message) return;
 
-    hireStatus.textContent = "Processing transmission...";
-    hireStatus.className = "hire-status";
+        hireStatus.textContent = "Processing transmission...";
+        hireStatus.className = "hire-status";
 
-    try {
-        const response = await fetch("/api/hire", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, email, message })
-        });
-        const data = await response.json();
+        try {
+            const response = await fetch("/api/hire", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, message })
+            });
+            const data = await response.json();
 
-        if (response.ok) {
-            hireStatus.textContent = "Message processed successfully! Amir will follow up shortly.";
-            hireStatus.className = "hire-status success";
-            hireForm.reset();
-        } else {
-            hireStatus.textContent = data.detail || "Failed to submit request parameters.";
+            if (response.ok) {
+                hireStatus.textContent = "Message processed successfully! Amir will follow up shortly.";
+                hireStatus.className = "hire-status success";
+                hireForm.reset();
+            } else {
+                hireStatus.textContent = data.detail || "Failed to submit request parameters.";
+                hireStatus.className = "hire-status error";
+            }
+        } catch (err) {
+            hireStatus.textContent = "Network error. Please try again or reach out via standard email.";
             hireStatus.className = "hire-status error";
         }
-    } catch (err) {
-        hireStatus.textContent = "Network error. Please try again or reach out via standard email.";
-        hireStatus.className = "hire-status error";
-    }
-});
+    });
+}

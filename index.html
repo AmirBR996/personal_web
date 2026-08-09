@@ -6,21 +6,25 @@
     <title>Amir Bhattarai | AI/ML Engineer</title>
     <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="modern-theme">
+
+    <div class="background-glow"></div>
+
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Amir.<span>AI</span></a>
+            <a href="#" class="logo">Amir<span class="logo-accent">.AI</span></a>
             <ul class="nav-links">
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#hire">Hire Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-btn" aria-label="Toggle structural theme template state">
-                <i class="fas fa-moon"></i>
-            </button>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -30,162 +34,262 @@
     <header class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h3>Hello, I'm</h3>
-                <h1>Amir Bhattarai</h1>
-                <h2>Specializing in <span class="typing-text"></span></h2>
-                <p>Computer Science student with hands-on experience building AI production layers using Large Language Models, Retrieval-Augmented Generation (RAG architectures), and Deep Learning systems.</p>
-                <div class="social-icons">
-                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:amirbhattrai861@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <div class="badge-pill">
+                    <span class="status-dot"></span> Available for Opportunities
                 </div>
-                <a href="#contact" class="btn">Get In Touch</a>
+                <h1>Amir Bhattarai</h1>
+                <h2>AI/ML Engineer | <span class="typing-text gradient-text"></span></h2>
+                <p>Computer Science student specializing in production AI layers, Large Language Models, RAG architectures, multi-agent frameworks, and deep learning systems.</p>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+                    <div class="social-links-inline">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:amirbhattrai861@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="hero-image">
-                <div class="image-glowing-wrapper">
-                    <img src="./static/amir.jpeg" alt="Amir Bhattarai Portrait" onerror="this.src='https://via.placeholder.com/400x400/4f46e5/ffffff?text=AB';">
+                <div class="avatar-wrapper">
+                    <img src="./static/amir.jpeg" alt="Amir Bhattarai" onerror="this.src='https://via.placeholder.com/400x400/6366f1/ffffff?text=AB';">
                 </div>
             </div>
         </div>
     </header>
 
     <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
+        <div class="section-header">
+            <span class="section-subtitle">Career Path</span>
+            <h2 class="section-title">Work Experience</h2>
+        </div>
         <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">Apr 2026 - Present</div>
-                <div class="timeline-content">
-                    <h3>AI/ML Engineer (Remote)</h3>
-                    <h4 class="company">AI Studio</h4>
-                    <p>Building scalable AI intelligence layers focused on parameter optimization and localized data parsing engines.</p>
-                    <ul>
-                        <li>Fine-tuning Small Language Models (SLMs) utilizing QLoRA quantization strategies.</li>
-                        <li>Setting up Retrieval-Augmented Generation pipelines to increase response accuracy on custom datasets.</li>
-                        <li>Integrating FAISS structural vector indexes and LangChain pipelines with distributed open LLM APIs.</li>
-                    </ul>
+            <div class="timeline-card glass-panel">
+                <div class="timeline-header">
+                    <div>
+                        <h3>AI/ML Engineer <span class="badge-tag">Remote</span></h3>
+                        <h4 class="company">AI Studio</h4>
+                    </div>
+                    <span class="timeline-date">Apr 2026 - Present</span>
                 </div>
+                <p class="timeline-desc">Architecting production AI pipelines, SLM fine-tuning via QLoRA, and high-performance FAISS vector search integrations with open LLM endpoints.</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section bg-light">
-        <h2 class="section-title">Featured Projects</h2>
+    <section id="projects" class="section">
+        <div class="section-header">
+            <span class="section-subtitle">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-gavel"></i></div>
-                <h3>CivicAI Multilingual Assistant</h3>
-                <p>Fine-tuned the Phi-3 SLM via QLoRA PEFT strategies for contextual constitutional question handling. Features an orchestrating LangChain framework communicating with a FastAPI backend handling dual English/Nepali structures.</p>
+            
+            <div class="project-card glass-panel">
+                <div class="card-icon"><i class="fas fa-robot"></i></div>
+                <h3>Recruiter AI</h3>
+                <p class="project-summary">Multi-agent resume screening pipeline with 4D candidate scoring (0–100), automated email outreach, IMAP ingestion, and SQLite tracking.</p>
                 <div class="project-tags">
-                    <span>Phi-3</span><span>QLoRA</span><span>RAG</span><span>FastAPI</span>
+                    <span>LangGraph</span><span>Groq</span><span>FastAPI</span><span>SQLite</span>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-university"></i></div>
-                <h3>NRB Multilingual RAG Engine</h3>
-                <p>Designed a localized RAG agent for Nepal Rastra Bank supporting native English, Nepali, and Romanized script processing. Uses dense semantic retrieval backed by Groq-hosted Llama 3.3 70B endpoints.</p>
+
+            <div class="project-card glass-panel">
+                <div class="card-icon"><i class="fas fa-gavel"></i></div>
+                <h3>CivicAI Assistant</h3>
+                <p class="project-summary">Multilingual constitutional assistant powered by a QLoRA fine-tuned Phi-3 model and a LangChain/FAISS dual English/Nepali RAG pipeline.</p>
                 <div class="project-tags">
-                    <span>Llama 3.3</span><span>Groq</span><span>FAISS</span><span>LangChain</span>
+                    <span>Phi-3</span><span>QLoRA</span><span>LangChain</span><span>FastAPI</span>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-phone-alt"></i></div>
+
+            <div class="project-card glass-panel">
+                <div class="card-icon"><i class="fas fa-university"></i></div>
+                <h3>NRB RAG Assistant</h3>
+                <p class="project-summary">Financial domain chatbot for Nepal Rastra Bank supporting English, Nepali, and Romanized scripts using FAISS and Groq Llama 3.3 70B.</p>
+                <div class="project-tags">
+                    <span>Llama 3.3</span><span>Groq</span><span>FAISS</span><span>RAG</span>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel">
+                <div class="card-icon"><i class="fas fa-store"></i></div>
+                <h3>Krishi Bazar Marketplace</h3>
+                <p class="project-summary">Full-stack MERN agricultural e-commerce platform linking local farmers directly with produce buyers with real-time inventory management.</p>
+                <div class="project-tags">
+                    <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                </div>
+            </div>
+
+            <div class="project-card glass-panel">
+                <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
                 <h3>AI Voice Call Agent</h3>
-                <p>Constructed an automated real-time voice agent utilizing Twilio integrations to process academic enrollment inquiries. Couples custom vector context retrieval with high-speed inference backends and specialized text-to-speech outputs.</p>
+                <p class="project-summary">Real-time academic inquiry voice bot combining Twilio, Groq-backed RAG vector context retrieval, and localized Nepali text-to-speech engine.</p>
                 <div class="project-tags">
-                    <span>Twilio</span><span>TTS</span><span>Groq</span><span>FAISS</span>
+                    <span>Twilio</span><span>Groq</span><span>FAISS</span><span>Nepali TTS</span>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-seedling"></i></div>
-                <h3>Nepal Crop Disease Classifier</h3>
-                <p>Trained deep neural network layers using a DenseNet121 computer vision architecture natively in PyTorch on custom agrarian distress datasets. Served via a comprehensive full-stack asynchronous web portal.</p>
+
+            <div class="project-card glass-panel">
+                <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                <h3>Crop Disease Detector</h3>
+                <p class="project-summary">Computer vision web app using PyTorch DenseNet121 trained on agrarian datasets to detect plant diseases with 95% accuracy.</p>
                 <div class="project-tags">
-                    <span>PyTorch</span><span>DenseNet121</span><span>Deep Learning</span>
+                    <span>PyTorch</span><span>DenseNet121</span><span>CV</span><span>FastAPI</span>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section id="skills" class="section">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> AI & Generative AI</h3>
+        <div class="section-header">
+            <span class="section-subtitle">Capabilities</span>
+            <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card glass-panel">
+                <div class="skill-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Generative AI</h3>
+                </div>
                 <div class="skill-tags">
-                    <span>PyTorch</span><span>Deep Learning</span><span>Machine Learning</span><span>LangChain</span><span>RAG</span><span>Langgraph</span><span>FAISS</span>
+                    <span>PyTorch</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FAISS</span><span>Machine Learning</span><span>Deep Learning</span>
                 </div>
             </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Languages & Backend</h3>
+            <div class="skill-card glass-panel">
+                <div class="skill-header">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages & Backend</h3>
+                </div>
                 <div class="skill-tags">
-                    <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express.js</span>
+                    <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express.js</span><span>JavaScript</span>
                 </div>
             </div>
-            <div class="skill-category">
-                <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+            <div class="skill-card glass-panel">
+                <div class="skill-header">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases & Tools</h3>
+                </div>
                 <div class="skill-tags">
-                    <span>MySQL</span><span>MongoDB</span><span>Git</span><span>Linux</span><span>Docker</span>
+                    <span>MySQL</span><span>MongoDB</span><span>SQLite</span><span>Git</span><span>Linux</span><span>Docker</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="hire" class="section bg-light">
-        <h2 class="section-title">Hire Me</h2>
-        <div class="hire-container">
+    <section id="certifications" class="section">
+        <div class="section-header">
+            <span class="section-subtitle">Qualifications</span>
+            <h2 class="section-title">Verified Certifications</h2>
+        </div>
+        <div class="certifications-grid">
+            
+            <div class="cert-card glass-panel highlight-border">
+                <div class="cert-header">
+                    <div class="cert-badge-icon"><i class="fab fa-python"></i></div>
+                    <span class="verified-pill"><i class="fas fa-check-circle"></i> Verified</span>
+                </div>
+                <div class="cert-content">
+                    <h3>100 Days of Code: The Complete Python Pro Bootcamp</h3>
+                    <p class="cert-instructor"><i class="fas fa-chalkboard-teacher"></i> Udemy — Instructor: Angela Yu</p>
+                    <p class="cert-description">Mastered Python programming, object-oriented concepts, web scraping, data science automation, and backend framework integration.</p>
+                </div>
+                <a href="https://www.udemy.com/certificate/UC-ed8a4256-4060-4f5f-8715-ae9c82c69d14/" target="_blank" class="cert-btn">
+                    View Credential <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="cert-card glass-panel highlight-border">
+                <div class="cert-header">
+                    <div class="cert-badge-icon"><i class="fas fa-code"></i></div>
+                    <span class="verified-pill"><i class="fas fa-check-circle"></i> Verified</span>
+                </div>
+                <div class="cert-content">
+                    <h3>100 Days of Code: The Complete Web Development Bootcamp</h3>
+                    <p class="cert-instructor"><i class="fas fa-chalkboard-teacher"></i> Udemy — Instructor: Angela Yu</p>
+                    <p class="cert-description">Comprehensive full-stack development training covering HTML5, CSS3, modern JavaScript, Node.js, Express, React, and MongoDB.</p>
+                </div>
+                <a href="https://www.udemy.com/certificate/UC-c6dc6d7c-736a-4698-91f3-5146d3b4176d/" target="_blank" class="cert-btn">
+                    View Credential <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="hire" class="section">
+        <div class="section-header">
+            <span class="section-subtitle">Collaboration</span>
+            <h2 class="section-title">Hire Me</h2>
+        </div>
+        <div class="hire-wrapper glass-panel">
             <form id="hireForm" class="hire-form">
-                <input type="text" id="hireName" placeholder="Your Name" required>
-                <input type="email" id="hireEmail" placeholder="Your Gmail" required>
-                <textarea id="hireMessage" placeholder="Describe the scope of your project..." rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
+                <div class="form-row">
+                    <input type="text" id="hireName" placeholder="Your Name" required>
+                    <input type="email" id="hireEmail" placeholder="Your Email" required>
+                </div>
+                <textarea id="hireMessage" placeholder="Describe project requirements or hiring inquiries..." rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
                 <div id="hireStatus" class="hire-status"></div>
             </form>
         </div>
     </section>
 
     <section id="contact" class="section">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> amirbhattrai861@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +977 9818585524</p>
-                <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
-                <p><i class="fas fa-graduation-cap"></i> B.Sc. CSIT, New Summit College (Expected 2028)</p>
+        <div class="section-header">
+            <span class="section-subtitle">Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-cards-grid">
+            <div class="contact-card glass-panel">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>amirbhattrai861@gmail.com</p>
+            </div>
+            <div class="contact-card glass-panel">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+977 9818585524</p>
+            </div>
+            <div class="contact-card glass-panel">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Location</h4>
+                <p>Kathmandu, Nepal</p>
+            </div>
+            <div class="contact-card glass-panel">
+                <i class="fas fa-graduation-cap"></i>
+                <h4>Education</h4>
+                <p>B.Sc. CSIT, New Summit College</p>
             </div>
         </div>
     </section>
 
-    <!-- Interactive AI Assistant Block Overlay -->
     <div class="chat-widget" id="chatWidget">
         <div class="chat-header">
             <div class="chat-bot-info">
-                <i class="fas fa-robot"></i>
+                <div class="bot-avatar"><i class="fas fa-robot"></i></div>
                 <div>
                     <h4>Amir.AI</h4>
-                    <p class="status">Online</p>
+                    <p class="status"><span class="status-dot"></span> Online</p>
                 </div>
             </div>
-            <div class="chat-controls">
-                <button id="close-chat" class="chat-control-btn" aria-label="Dismiss conversational pane"><i class="fas fa-times"></i></button>
-            </div>
+            <button id="close-chat" class="chat-control-btn" aria-label="Close Assistant"><i class="fas fa-times"></i></button>
         </div>
         <div class="chat-messages" id="chatMessages">
-            <div class="message bot">Namaste! I am Amir's AI assistant. Ask me anything about his projects, education, or technical skill stack!</div>
+            <div class="message bot">Namaste! I am Amir's AI companion. Ask me anything about his technical stack, projects, or background.</div>
         </div>
         <div class="chat-input-container">
-            <input type="text" id="chatInput" placeholder="Ask about education, project...">
-            <button id="sendBtn" class="send-btn" aria-label="Submit prompt content structure"><i class="fas fa-paper-plane"></i></button>
+            <input type="text" id="chatInput" placeholder="Ask a question...">
+            <button id="sendBtn" class="send-btn" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
 
-    <!-- Floating Chat Toggle Trigger -->
-    <button class="chat-toggle-btn" id="openChat" aria-label="Open AI portfolio companion panel">
+    <button class="chat-toggle-btn" id="openChat" aria-label="Open AI Companion">
         <i class="fas fa-comment-dots"></i>
     </button>
 
-    <footer>
-        <p>&copy; 2026 Amir Bhattarai. All Rights Reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2026 Amir Bhattarai. Designed with modern web standards.</p>
     </footer>
 
     <script src="./static/script.js"></script>

@@ -411,6 +411,18 @@ body {
     margin-top: 0.25rem;
 }
 
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.project-card h3,
+.project-card p {
+    color: inherit;
+}
+
 /* Work Experience */
 .timeline {
     max-width: 800px;

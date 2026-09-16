@@ -13,8 +13,16 @@ loader = TextLoader("data.txt", encoding="utf-8")
 docs = loader.load()
 portfolio_text = "\n".join([doc.page_content for doc in docs])
 
-retriever_llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
-response_llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.7, streaming=True)
+retriever_llm = ChatGroq(
+    model="openai/gpt-oss-120b",
+    temperature=0
+)
+
+response_llm = ChatGroq(
+    model="openai/gpt-oss-120b",
+    temperature=0.7,
+    streaming=True
+)
 
 
 class AgentState(TypedDict):

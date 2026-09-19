@@ -44,6 +44,16 @@ async def serve_index():
     return FileResponse("index.html")
 
 
+@app.get("/sitemap.xml")
+async def serve_sitemap():
+    return FileResponse("sitemap.xml", media_type="application/xml")
+
+
+@app.get("/robots.txt")
+async def serve_robots():
+    return FileResponse("robots.txt", media_type="text/plain")
+
+
 @app.post("/api/hire")
 async def hire(request: HireRequest):
     gmail = os.getenv("GMAIL")

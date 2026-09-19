@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Let AI answer engines read the site (remove any you don't want)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://bhattaraiamir.com.np/sitemap.xml

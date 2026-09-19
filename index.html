@@ -1,334 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Bhattarai | AI/ML Engineer</title>
-    <link rel="stylesheet" href="./static/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ PRIMARY META ============ -->
+<title>Amir Bhattarai — AI/ML Engineer in Kathmandu, Nepal</title>
+
+<meta name="description" content="Amir Bhattarai is an AI/ML engineer in Kathmandu, Nepal. He builds LLM and RAG systems, multi-agent pipelines and PyTorch models with Python, LangChain, LangGraph and FastAPI. See projects and hire him.">
+
+<link rel="canonical" href="https://bhattaraiamir.com.np/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Amir Bhattarai">
+<meta name="theme-color" content="#0b1020">
+<meta name="geo.region" content="NP-BA">
+<meta name="geo.placename" content="Kathmandu">
+
+<!-- ============ ICONS (add these files to /static/) ============ -->
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- ============ OPEN GRAPH ============ -->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Amir Bhattarai">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Amir Bhattarai — AI/ML Engineer in Kathmandu, Nepal">
+<meta property="og:description" content="AI/ML engineer building LLM and RAG systems, multi-agent pipelines and PyTorch models. Projects, skills and contact details.">
+<meta property="og:url" content="https://bhattaraiamir.com.np/">
+<meta property="og:image" content="https://bhattaraiamir.com.np/static/amir.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portrait of Amir Bhattarai, AI/ML engineer">
+<meta property="profile:first_name" content="Amir">
+<meta property="profile:last_name" content="Bhattarai">
+
+<!-- ============ TWITTER / X ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amir Bhattarai — AI/ML Engineer in Kathmandu, Nepal">
+<meta name="twitter:description" content="AI/ML engineer building LLM and RAG systems, multi-agent pipelines and PyTorch models.">
+<meta name="twitter:image" content="https://bhattaraiamir.com.np/static/amir.jpeg">
+<meta name="twitter:image:alt" content="Portrait of Amir Bhattarai, AI/ML engineer">
+
+<!-- ============ STYLES ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+<link rel="stylesheet" href="/static/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome loaded without blocking first paint -->
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+<!-- ============ STRUCTURED DATA ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://bhattaraiamir.com.np/#amir",
+      "name": "Amir Bhattarai",
+      "givenName": "Amir",
+      "familyName": "Bhattarai",
+      "url": "https://bhattaraiamir.com.np/",
+      "image": "https://bhattaraiamir.com.np/static/amir.jpeg",
+      "email": "mailto:amirbhattrai861@gmail.com",
+      "telephone": "+977-9818585524",
+      "jobTitle": "AI/ML Engineer",
+      "description": "AI/ML engineer and computer science student in Kathmandu, Nepal, working on large language models, retrieval-augmented generation, multi-agent systems and deep learning.",
+      "nationality": { "@type": "Country", "name": "Nepal" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kathmandu",
+        "addressRegion": "Bagmati Province",
+        "addressCountry": "NP"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "New Summit College",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kathmandu",
+          "addressCountry": "NP"
+        }
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "AI/ML Engineer",
+        "occupationLocation": { "@type": "City", "name": "Kathmandu" },
+        "skills": "Python, PyTorch, LangChain, LangGraph, FAISS, RAG, LLM fine-tuning, FastAPI"
+      },
+      "knowsAbout": [
+        "Machine learning",
+        "Deep learning",
+        "Large language models",
+        "Retrieval-augmented generation",
+        "Multi-agent systems",
+        "PyTorch",
+        "LangChain",
+        "LangGraph",
+        "FAISS vector search",
+        "QLoRA fine-tuning",
+        "FastAPI",
+        "MERN stack"
+      ],
+      "knowsLanguage": ["English", "Nepali"],
+      "sameAs": [
+        "https://github.com/AmirBR996",
+        "https://www.linkedin.com/in/amir-bhattarai-7577b4322/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bhattaraiamir.com.np/#website",
+      "url": "https://bhattaraiamir.com.np/",
+      "name": "Amir Bhattarai",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://bhattaraiamir.com.np/#amir" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://bhattaraiamir.com.np/#webpage",
+      "url": "https://bhattaraiamir.com.np/",
+      "name": "Amir Bhattarai — AI/ML Engineer in Kathmandu, Nepal",
+      "isPartOf": { "@id": "https://bhattaraiamir.com.np/#website" },
+      "about": { "@id": "https://bhattaraiamir.com.np/#amir" },
+      "mainEntity": { "@id": "https://bhattaraiamir.com.np/#amir" },
+      "primaryImageOfPage": "https://bhattaraiamir.com.np/static/amir.jpeg",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://bhattaraiamir.com.np/#projects",
+      "name": "Featured projects by Amir Bhattarai",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Recruiter AI",
+            "description": "Multi-agent resume screening pipeline with four-dimension candidate scoring, automated email outreach, IMAP ingestion and SQLite tracking.",
+            "codeRepository": "https://github.com/AmirBR996/Recuriter-AI",
+            "programmingLanguage": "Python",
+            "author": { "@id": "https://bhattaraiamir.com.np/#amir" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "CivicAI Assistant",
+            "description": "Multilingual constitutional assistant using a QLoRA fine-tuned Phi-3 model with a LangChain and FAISS English/Nepali RAG pipeline.",
+            "programmingLanguage": "Python",
+            "author": { "@id": "https://bhattaraiamir.com.np/#amir" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "NRB RAG Assistant",
+            "description": "Financial chatbot for Nepal Rastra Bank documents supporting English, Nepali and Romanized Nepali, built on FAISS and Llama 3.3 70B via Groq.",
+            "codeRepository": "https://github.com/AmirBR996/Multi-Lingual-RAG",
+            "programmingLanguage": "Python",
+            "author": { "@id": "https://bhattaraiamir.com.np/#amir" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Krishi Bazar Marketplace",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Full-stack MERN marketplace connecting Nepali farmers directly with produce buyers, with real-time inventory management.",
+            "url": "https://krishik-bazar-3sv7y4p72-amirbr996s-projects.vercel.app/",
+            "author": { "@id": "https://bhattaraiamir.com.np/#amir" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "AI Voice Call Agent",
+            "description": "Real-time academic inquiry voice bot combining Twilio telephony, Groq-backed RAG retrieval and Nepali text-to-speech.",
+            "codeRepository": "https://github.com/AmirBR996/Call-Agent",
+            "programmingLanguage": "Python",
+            "author": { "@id": "https://bhattaraiamir.com.np/#amir" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "Crop Disease Detector",
+            "description": "Computer vision web app using a PyTorch DenseNet121 model to identify plant diseases from leaf images at 95% test accuracy.",
+            "programmingLanguage": "Python",
+            "author": { "@id": "https://bhattaraiamir.com.np/#amir" }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bhattaraiamir.com.np/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Amir Bhattarai do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Amir Bhattarai is an AI/ML engineer based in Kathmandu, Nepal. He builds retrieval-augmented generation systems, multi-agent LLM applications, fine-tuned small language models and computer vision models, and ships them behind FastAPI services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which technologies does Amir work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Python, PyTorch, LangChain, LangGraph, FAISS, Groq and open LLM endpoints, QLoRA fine-tuning, FastAPI, Node.js, Express, React, MongoDB, MySQL, SQLite, Docker, Git and Linux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Amir Bhattarai available for freelance or remote work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. He takes on remote and freelance AI and machine learning work, including RAG chatbots, document question-answering systems, LLM fine-tuning and computer vision projects. Contact him at amirbhattrai861@gmail.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Amir build AI systems that work in Nepali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Several of his projects handle Nepali, English and Romanized Nepali input, including a Nepal Rastra Bank financial assistant, a constitutional question-answering assistant and a voice agent with Nepali text-to-speech."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- Small additions for the new markup; the rest lives in style.css -->
+<style>
+  .skip-link{position:absolute;left:-9999px;top:0;z-index:999;padding:.75rem 1rem;background:#111;color:#fff;border-radius:0 0 8px 0}
+  .skip-link:focus{left:0}
+  .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  .about-flex{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+  .about-flex img{width:160px;height:160px;border-radius:50%;object-fit:cover;flex-shrink:0}
+  .about-flex .about-text{flex:1;min-width:260px}
+  .faq-list{display:grid;gap:1rem}
+  .faq-item{padding:1.25rem 1.5rem}
+  .faq-item summary{cursor:pointer;font-weight:600;font-size:1.05rem}
+  .faq-item p{margin:.75rem 0 0}
+  :where(a,button,input,textarea,summary):focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
 </head>
+
 <body class="modern-theme">
 
-    <div class="background-glow"></div>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Amir<span class="logo-accent">.AI</span></a>
-            <ul class="nav-links">
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#hire">Hire Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+<div class="background-glow" aria-hidden="true"></div>
 
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="badge-pill">
-                    <span class="status-dot"></span> Available for Opportunities
-                </div>
-                <h1>Amir Bhattarai</h1>
-                <h2>AI/ML Engineer | <span class="typing-text gradient-text"></span></h2>
-                <p>Computer Science student specializing in production AI layers, Large Language Models, RAG architectures, multi-agent frameworks, and deep learning systems.</p>
-                
-                <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
-                    <div class="social-links-inline">
-                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:amirbhattrai861@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="avatar-wrapper">
-                    <img src="./static/amir.jpeg" alt="Amir Bhattarai" onerror="this.src='https://via.placeholder.com/400x400/6366f1/ffffff?text=AB';">
-                </div>
-            </div>
-        </div>
-    </header>
+<nav class="navbar" aria-label="Main">
+  <div class="nav-container">
+    <a href="/" class="logo">Amir<span class="logo-accent">.AI</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#hire">Hire Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+  </div>
+</nav>
 
-    <section id="experience" class="section">
-        <div class="section-header">
-            <span class="section-subtitle">Career Path</span>
-            <h2 class="section-title">Work Experience</h2>
-        </div>
-        <div class="timeline">
-            <div class="timeline-card glass-panel">
-                <div class="timeline-header">
-                    <div>
-                        <h3>AI/ML Engineer <span class="badge-tag">Remote</span></h3>
-                        <h4 class="company">AI Studio</h4>
-                    </div>
-                    <span class="timeline-date">Apr 2026 - Present</span>
-                </div>
-                <p class="timeline-desc">Architecting production AI pipelines, SLM fine-tuning via QLoRA, and high-performance FAISS vector search integrations with open LLM endpoints.</p>
-            </div>
-        </div>
-    </section>
+<header class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <p class="badge-pill"><span class="status-dot" aria-hidden="true"></span> Available for opportunities</p>
 
-<section id="projects" class="section">
+      <h1>Amir Bhattarai — AI/ML Engineer</h1>
+
+      <p class="hero-role">AI/ML Engineer | <span class="typing-text gradient-text" aria-hidden="true"></span></p>
+
+      <p>Computer science student in Kathmandu, Nepal, building production AI layers: large language models, retrieval-augmented generation, multi-agent frameworks and deep learning systems.</p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <div class="social-links-inline">
+          <a href="https://github.com/AmirBR996" target="_blank" rel="me noopener noreferrer" aria-label="Amir Bhattarai on GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/amir-bhattarai-7577b4322/" target="_blank" rel="me noopener noreferrer" aria-label="Amir Bhattarai on LinkedIn">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:amirbhattrai861@gmail.com" aria-label="Email Amir Bhattarai">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="about" class="section">
     <div class="section-header">
-        <span class="section-subtitle">Portfolio</span>
-        <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">About</p>
+      <h2 class="section-title">AI/ML engineer based in Kathmandu, Nepal</h2>
+    </div>
+
+    <div class="about-content glass-panel">
+      <div class="about-flex">
+        <img src="/static/amir.jpeg" width="320" height="320" fetchpriority="high" decoding="async"
+             alt="Amir Bhattarai, AI/ML engineer from Kathmandu, Nepal">
+        <div class="about-text">
+          <p>I am Amir Bhattarai, an AI/ML engineer and computer science student in Kathmandu, Nepal. I build machine learning and generative AI applications with Python, PyTorch, large language models, retrieval-augmented generation (RAG), FastAPI and the MERN stack.</p>
+          <p>My work focuses on practical AI systems: multi-agent applications, document question-answering, conversational and voice assistants that handle both English and Nepali, and deep learning models for computer vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Career path</p>
+      <h2 class="section-title">Work experience</h2>
+    </div>
+    <div class="timeline">
+      <article class="timeline-card glass-panel">
+        <div class="timeline-header">
+          <div>
+            <h3>AI/ML Engineer <span class="badge-tag">Remote</span></h3>
+            <p class="company">AI Studio</p>
+          </div>
+          <p class="timeline-date">
+            <time datetime="2026-04">Apr 2026</time> – <time datetime="2026-07">Jul 2026</time>
+          </p>
+        </div>
+        <p class="timeline-desc">Built production AI pipelines, fine-tuned small language models with QLoRA, and integrated high-performance FAISS vector search with open LLM endpoints.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Portfolio</p>
+      <h2 class="section-title">Featured AI and machine learning projects</h2>
     </div>
 
     <div class="projects-grid">
 
-        <a href="https://github.com/AmirBR996/Recuriter-AI"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-card glass-panel">
-            <div class="card-icon"><i class="fas fa-robot"></i></div>
-            <h3>Recruiter AI</h3>
-            <p class="project-summary">
-                Multi-agent resume screening pipeline with 4D candidate scoring (0–100),
-                automated email outreach, IMAP ingestion, and SQLite tracking.
-            </p>
-            <div class="project-tags">
-                <span>LangGraph</span><span>Groq</span><span>FastAPI</span><span>SQLite</span>
-            </div>
-        </a>
+      <article class="project-card glass-panel">
+        <div class="card-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+        <h3>
+          <a href="https://github.com/AmirBR996/Recuriter-AI" target="_blank" rel="noopener noreferrer">
+            Recruiter AI — multi-agent resume screening
+          </a>
+        </h3>
+        <p class="project-summary">Multi-agent resume screening pipeline with four-dimension candidate scoring (0–100), automated email outreach, IMAP ingestion and SQLite tracking.</p>
+        <p class="project-tags">
+          <span>LangGraph</span><span>Groq</span><span>FastAPI</span><span>SQLite</span>
+        </p>
+      </article>
 
-        <a href="#"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-card glass-panel">
-            <div class="card-icon"><i class="fas fa-gavel"></i></div>
-            <h3>CivicAI Assistant</h3>
-            <p class="project-summary">
-                Multilingual constitutional assistant powered by a QLoRA fine-tuned
-                Phi-3 model and a LangChain/FAISS dual English/Nepali RAG pipeline.
-            </p>
-            <div class="project-tags">
-                <span>Phi-3</span><span>QLoRA</span><span>LangChain</span><span>FastAPI</span>
-            </div>
-        </a>
+      <article class="project-card glass-panel">
+        <div class="card-icon"><i class="fas fa-gavel" aria-hidden="true"></i></div>
+        <h3>CivicAI Assistant — Nepali constitutional Q&amp;A</h3>
+        <p class="project-summary">Multilingual constitutional assistant powered by a QLoRA fine-tuned Phi-3 model and a LangChain/FAISS dual English–Nepali RAG pipeline.</p>
+        <p class="project-tags">
+          <span>Phi-3</span><span>QLoRA</span><span>LangChain</span><span>FastAPI</span>
+        </p>
+      </article>
 
-        <a href="https://github.com/AmirBR996/Multi-Lingual-RAG"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-card glass-panel">
-            <div class="card-icon"><i class="fas fa-university"></i></div>
-            <h3>NRB RAG Assistant</h3>
-            <p class="project-summary">
-                Financial domain chatbot for Nepal Rastra Bank supporting English,
-                Nepali, and Romanized scripts using FAISS and Groq Llama 3.3 70B.
-            </p>
-            <div class="project-tags">
-                <span>Llama 3.3</span><span>Groq</span><span>FAISS</span><span>RAG</span>
-            </div>
-        </a>
+      <article class="project-card glass-panel">
+        <div class="card-icon"><i class="fas fa-university" aria-hidden="true"></i></div>
+        <h3>
+          <a href="https://github.com/AmirBR996/Multi-Lingual-RAG" target="_blank" rel="noopener noreferrer">
+            NRB RAG Assistant — multilingual financial chatbot
+          </a>
+        </h3>
+        <p class="project-summary">Financial domain chatbot for Nepal Rastra Bank documents, answering in English, Nepali and Romanized Nepali using FAISS and Llama 3.3 70B on Groq.</p>
+        <p class="project-tags">
+          <span>Llama 3.3</span><span>Groq</span><span>FAISS</span><span>RAG</span>
+        </p>
+      </article>
 
-        <a href="https://krishik-bazar-3sv7y4p72-amirbr996s-projects.vercel.app/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-card glass-panel">
-            <div class="card-icon"><i class="fas fa-store"></i></div>
-            <h3>Krishi Bazar Marketplace</h3>
-            <p class="project-summary">
-                Full-stack MERN agricultural e-commerce platform linking local farmers
-                directly with produce buyers with real-time inventory management.
-            </p>
-            <div class="project-tags">
-                <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
-            </div>
-        </a>
+      <article class="project-card glass-panel">
+        <div class="card-icon"><i class="fas fa-store" aria-hidden="true"></i></div>
+        <h3>
+          <a href="https://krishik-bazar-3sv7y4p72-amirbr996s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Krishi Bazar — farmer-to-buyer marketplace
+          </a>
+        </h3>
+        <p class="project-summary">Full-stack MERN agricultural e-commerce platform linking local farmers directly with produce buyers, with real-time inventory management.</p>
+        <p class="project-tags">
+          <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+        </p>
+      </article>
 
-        <a href="https://github.com/AmirBR996/Call-Agent"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-card glass-panel">
-            <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
-            <h3>AI Voice Call Agent</h3>
-            <p class="project-summary">
-                Real-time academic inquiry voice bot combining Twilio, Groq-backed
-                RAG vector context retrieval, and localized Nepali text-to-speech engine.
-            </p>
-            <div class="project-tags">
-                <span>Twilio</span><span>Groq</span><span>FAISS</span><span>Nepali TTS</span>
-            </div>
-        </a>
+      <article class="project-card glass-panel">
+        <div class="card-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+        <h3>
+          <a href="https://github.com/AmirBR996/Call-Agent" target="_blank" rel="noopener noreferrer">
+            AI Voice Call Agent — Nepali speech assistant
+          </a>
+        </h3>
+        <p class="project-summary">Real-time academic inquiry voice bot combining Twilio telephony, Groq-backed RAG retrieval and a localized Nepali text-to-speech engine.</p>
+        <p class="project-tags">
+          <span>Twilio</span><span>Groq</span><span>FAISS</span><span>Nepali TTS</span>
+        </p>
+      </article>
 
-        <a href="#"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-card glass-panel">
-            <div class="card-icon"><i class="fas fa-seedling"></i></div>
-            <h3>Crop Disease Detector</h3>
-            <p class="project-summary">
-                Computer vision web app using PyTorch DenseNet121 trained on agrarian
-                datasets to detect plant diseases with 95% accuracy.
-            </p>
-            <div class="project-tags">
-                <span>PyTorch</span><span>DenseNet121</span><span>CV</span><span>FastAPI</span>
-            </div>
-        </a>
+      <article class="project-card glass-panel">
+        <div class="card-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+        <h3>Crop Disease Detector — PyTorch computer vision</h3>
+        <p class="project-summary">Computer vision web app using a PyTorch DenseNet121 model trained on agricultural datasets to detect plant diseases at 95% accuracy.</p>
+        <p class="project-tags">
+          <span>PyTorch</span><span>DenseNet121</span><span>Computer vision</span><span>FastAPI</span>
+        </p>
+      </article>
 
     </div>
-</section>
+  </section>
 
-    <section id="skills" class="section">
-        <div class="section-header">
-            <span class="section-subtitle">Capabilities</span>
-            <h2 class="section-title">Technical Expertise</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card glass-panel">
-                <div class="skill-header">
-                    <i class="fas fa-brain"></i>
-                    <h3>AI & Generative AI</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>PyTorch</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FAISS</span><span>Machine Learning</span><span>Deep Learning</span>
-                </div>
-            </div>
-            <div class="skill-card glass-panel">
-                <div class="skill-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Languages & Backend</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express.js</span><span>JavaScript</span>
-                </div>
-            </div>
-            <div class="skill-card glass-panel">
-                <div class="skill-header">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases & Tools</h3>
-                </div>
-                <div class="skill-tags">
-                    <span>MySQL</span><span>MongoDB</span><span>SQLite</span><span>Git</span><span>Linux</span><span>Docker</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications" class="section">
-        <div class="section-header">
-            <span class="section-subtitle">Qualifications</span>
-            <h2 class="section-title">Verified Certifications</h2>
-        </div>
-        <div class="certifications-grid">
-            
-            <div class="cert-card glass-panel highlight-border">
-                <div class="cert-header">
-                    <div class="cert-badge-icon"><i class="fab fa-python"></i></div>
-                    <span class="verified-pill"><i class="fas fa-check-circle"></i> Verified</span>
-                </div>
-                <div class="cert-content">
-                    <h3>100 Days of Code: The Complete Python Pro Bootcamp</h3>
-                    <p class="cert-instructor"><i class="fas fa-chalkboard-teacher"></i> Udemy — Instructor: Angela Yu</p>
-                    <p class="cert-description">Mastered Python programming, object-oriented concepts, web scraping, data science automation, and backend framework integration.</p>
-                </div>
-                <a href="https://www.udemy.com/certificate/UC-ed8a4256-4060-4f5f-8715-ae9c82c69d14/" target="_blank" class="cert-btn">
-                    View Credential <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-
-            <div class="cert-card glass-panel highlight-border">
-                <div class="cert-header">
-                    <div class="cert-badge-icon"><i class="fas fa-code"></i></div>
-                    <span class="verified-pill"><i class="fas fa-check-circle"></i> Verified</span>
-                </div>
-                <div class="cert-content">
-                    <h3>100 Days of Code: The Complete Web Development Bootcamp</h3>
-                    <p class="cert-instructor"><i class="fas fa-chalkboard-teacher"></i> Udemy — Instructor: Angela Yu</p>
-                    <p class="cert-description">Comprehensive full-stack development training covering HTML5, CSS3, modern JavaScript, Node.js, Express, React, and MongoDB.</p>
-                </div>
-                <a href="https://www.udemy.com/certificate/UC-c6dc6d7c-736a-4698-91f3-5146d3b4176d/" target="_blank" class="cert-btn">
-                    View Credential <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="hire" class="section">
-        <div class="section-header">
-            <span class="section-subtitle">Collaboration</span>
-            <h2 class="section-title">Hire Me</h2>
-        </div>
-        <div class="hire-wrapper glass-panel">
-            <form id="hireForm" class="hire-form">
-                <div class="form-row">
-                    <input type="text" id="hireName" placeholder="Your Name" required>
-                    <input type="email" id="hireEmail" placeholder="Your Email" required>
-                </div>
-                <textarea id="hireMessage" placeholder="Describe project requirements or hiring inquiries..." rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
-                <div id="hireStatus" class="hire-status"></div>
-            </form>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="section-header">
-            <span class="section-subtitle">Connect</span>
-            <h2 class="section-title">Get In Touch</h2>
-        </div>
-        <div class="contact-cards-grid">
-            <div class="contact-card glass-panel">
-                <i class="fas fa-envelope"></i>
-                <h4>Email</h4>
-                <p>amirbhattrai861@gmail.com</p>
-            </div>
-            <div class="contact-card glass-panel">
-                <i class="fas fa-phone"></i>
-                <h4>Phone</h4>
-                <p>+977 9818585524</p>
-            </div>
-            <div class="contact-card glass-panel">
-                <i class="fas fa-map-marker-alt"></i>
-                <h4>Location</h4>
-                <p>Kathmandu, Nepal</p>
-            </div>
-            <div class="contact-card glass-panel">
-                <i class="fas fa-graduation-cap"></i>
-                <h4>Education</h4>
-                <p>B.Sc. CSIT, New Summit College</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="chat-widget" id="chatWidget">
-        <div class="chat-header">
-            <div class="chat-bot-info">
-                <div class="bot-avatar"><i class="fas fa-robot"></i></div>
-                <div>
-                    <h4>Amir.AI</h4>
-                    <p class="status"><span class="status-dot"></span> Online</p>
-                </div>
-            </div>
-            <button id="close-chat" class="chat-control-btn" aria-label="Close Assistant"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="chat-messages" id="chatMessages">
-            <div class="message bot">Namaste! I am Amir's AI companion. Ask me anything about his technical stack, projects, or background.</div>
-        </div>
-        <div class="chat-input-container">
-            <input type="text" id="chatInput" placeholder="Ask a question...">
-            <button id="sendBtn" class="send-btn" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
-        </div>
+  <section id="skills" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Capabilities</p>
+      <h2 class="section-title">Technical skills</h2>
     </div>
+    <div class="skills-grid">
+      <article class="skill-card glass-panel">
+        <div class="skill-header">
+          <i class="fas fa-brain" aria-hidden="true"></i>
+          <h3>AI and generative AI</h3>
+        </div>
+        <p class="skill-tags">
+          <span>PyTorch</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FAISS</span><span>Machine learning</span><span>Deep learning</span><span>QLoRA fine-tuning</span>
+        </p>
+      </article>
+      <article class="skill-card glass-panel">
+        <div class="skill-header">
+          <i class="fas fa-code" aria-hidden="true"></i>
+          <h3>Languages and backend</h3>
+        </div>
+        <p class="skill-tags">
+          <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express.js</span><span>JavaScript</span>
+        </p>
+      </article>
+      <article class="skill-card glass-panel">
+        <div class="skill-header">
+          <i class="fas fa-database" aria-hidden="true"></i>
+          <h3>Databases and tools</h3>
+        </div>
+        <p class="skill-tags">
+          <span>MySQL</span><span>MongoDB</span><span>SQLite</span><span>Git</span><span>Linux</span><span>Docker</span>
+        </p>
+      </article>
+    </div>
+  </section>
 
-    <button class="chat-toggle-btn" id="openChat" aria-label="Open AI Companion">
-        <i class="fas fa-comment-dots"></i>
+  <section id="certifications" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Qualifications</p>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="certifications-grid">
+
+      <article class="cert-card glass-panel highlight-border">
+        <div class="cert-header">
+          <div class="cert-badge-icon"><i class="fab fa-python" aria-hidden="true"></i></div>
+          <span class="verified-pill"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified</span>
+        </div>
+        <div class="cert-content">
+          <h3>100 Days of Code: The Complete Python Pro Bootcamp</h3>
+          <p class="cert-instructor"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Udemy — instructor Angela Yu</p>
+          <p class="cert-description">Python programming, object-oriented design, web scraping, data science automation and backend framework integration.</p>
+        </div>
+        <a href="https://www.udemy.com/certificate/UC-ed8a4256-4060-4f5f-8715-ae9c82c69d14/" target="_blank" rel="noopener noreferrer" class="cert-btn">
+          View Python certificate <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+      </article>
+
+      <article class="cert-card glass-panel highlight-border">
+        <div class="cert-header">
+          <div class="cert-badge-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+          <span class="verified-pill"><i class="fas fa-check-circle" aria-hidden="true"></i> Verified</span>
+        </div>
+        <div class="cert-content">
+          <h3>100 Days of Code: The Complete Web Development Bootcamp</h3>
+          <p class="cert-instructor"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Udemy — instructor Angela Yu</p>
+          <p class="cert-description">Full-stack development covering HTML5, CSS3, modern JavaScript, Node.js, Express, React and MongoDB.</p>
+        </div>
+        <a href="https://www.udemy.com/certificate/UC-c6dc6d7c-736a-4698-91f3-5146d3b4176d/" target="_blank" rel="noopener noreferrer" class="cert-btn">
+          View web development certificate <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Questions</p>
+      <h2 class="section-title">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item glass-panel">
+        <summary>What does Amir Bhattarai do?</summary>
+        <p>He is an AI/ML engineer in Kathmandu, Nepal, building retrieval-augmented generation systems, multi-agent LLM applications, fine-tuned small language models and computer vision models, served behind FastAPI.</p>
+      </details>
+      <details class="faq-item glass-panel">
+        <summary>Which technologies does he work with?</summary>
+        <p>Python, PyTorch, LangChain, LangGraph, FAISS, Groq and open LLM endpoints, QLoRA fine-tuning, FastAPI, Node.js, Express, React, MongoDB, MySQL, SQLite, Docker, Git and Linux.</p>
+      </details>
+      <details class="faq-item glass-panel">
+        <summary>Is he available for freelance or remote work?</summary>
+        <p>Yes. He takes on remote and freelance AI work, including RAG chatbots, document question-answering systems, LLM fine-tuning and computer vision projects. Email amirbhattrai861@gmail.com.</p>
+      </details>
+      <details class="faq-item glass-panel">
+        <summary>Does he build AI systems that work in Nepali?</summary>
+        <p>Yes. Several projects handle Nepali, English and Romanized Nepali, including a Nepal Rastra Bank financial assistant, a constitutional question-answering assistant and a voice agent with Nepali text-to-speech.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="hire" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Collaboration</p>
+      <h2 class="section-title">Hire me</h2>
+    </div>
+    <div class="hire-wrapper glass-panel">
+      <form id="hireForm" class="hire-form">
+        <div class="form-row">
+          <label class="visually-hidden" for="hireName">Your name</label>
+          <input type="text" id="hireName" name="name" autocomplete="name" placeholder="Your name" required>
+
+          <label class="visually-hidden" for="hireEmail">Your email</label>
+          <input type="email" id="hireEmail" name="email" autocomplete="email" placeholder="Your email" required>
+        </div>
+
+        <label class="visually-hidden" for="hireMessage">Project details</label>
+        <textarea id="hireMessage" name="message" placeholder="Describe your project or hiring inquiry" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary btn-full">Send message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+        <p id="hireStatus" class="hire-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-header">
+      <p class="section-subtitle">Connect</p>
+      <h2 class="section-title">Contact Amir Bhattarai</h2>
+    </div>
+    <address class="contact-cards-grid">
+      <div class="contact-card glass-panel">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        <h3>Email</h3>
+        <p><a href="mailto:amirbhattrai861@gmail.com">amirbhattrai861@gmail.com</a></p>
+      </div>
+      <div class="contact-card glass-panel">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+        <h3>Phone</h3>
+        <p><a href="tel:+9779818585524">+977 9818585524</a></p>
+      </div>
+      <div class="contact-card glass-panel">
+        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        <h3>Location</h3>
+        <p>Kathmandu, Bagmati Province, Nepal</p>
+      </div>
+      <div class="contact-card glass-panel">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        <h3>Education</h3>
+        <p>B.Sc. CSIT, New Summit College</p>
+      </div>
+    </address>
+  </section>
+
+</main>
+
+<div class="chat-widget" id="chatWidget">
+  <div class="chat-header">
+    <div class="chat-bot-info">
+      <div class="bot-avatar"><i class="fas fa-robot" aria-hidden="true"></i></div>
+      <div>
+        <p class="chat-bot-name">Amir.AI</p>
+        <p class="status"><span class="status-dot" aria-hidden="true"></span> Online</p>
+      </div>
+    </div>
+    <button id="close-chat" type="button" class="chat-control-btn" aria-label="Close assistant">
+      <i class="fas fa-times" aria-hidden="true"></i>
     </button>
+  </div>
+  <div class="chat-messages" id="chatMessages" aria-live="polite">
+    <div class="message bot">Namaste. I am Amir's AI companion. Ask me about his stack, projects or background.</div>
+  </div>
+  <div class="chat-input-container">
+    <label class="visually-hidden" for="chatInput">Ask a question</label>
+    <input type="text" id="chatInput" placeholder="Ask a question">
+    <button id="sendBtn" type="button" class="send-btn" aria-label="Send message">
+      <i class="fas fa-paper-plane" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Amir Bhattarai. Designed with modern web standards.</p>
-    </footer>
+<button class="chat-toggle-btn" id="openChat" type="button" aria-label="Open AI companion">
+  <i class="fas fa-comment-dots" aria-hidden="true"></i>
+</button>
 
-    <script src="./static/script.js"></script>
+<footer class="footer">
+  <p>&copy; 2026 Amir Bhattarai — AI/ML engineer, Kathmandu, Nepal.</p>
+</footer>
+
+<script src="/static/script.js" defer></script>
 </body>
 </html>
